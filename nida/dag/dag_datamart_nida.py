@@ -11,7 +11,7 @@ from airflow.operators.empty import EmptyOperator
 with DAG(
     dag_id="dag_datamart_nida",
     schedule="0 2 * * *",
-    start_date=pendulum.datetime(2023, 5, 21, tz="UTC"),
+    start_date=pendulum.datetime(2023, 5, 20, tz="Asia/Jakarta"),
     catchup=False,
     dagrun_timeout=datetime.timedelta(minutes=60),
 
