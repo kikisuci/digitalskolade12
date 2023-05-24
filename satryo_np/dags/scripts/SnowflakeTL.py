@@ -24,11 +24,6 @@ class SnowflakeTL:
 
         try:
             curs.execute(query)
-            rows = curs.fetchall()
-
-            for row in rows:
-                print(row)
-                print("\n")
         finally:
             curs.close()
 
