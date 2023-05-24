@@ -10,8 +10,8 @@ from airflow.operators.empty import EmptyOperator
 
 with DAG(
     dag_id="dag_config_nida",
-    schedule="0 0 * * *",
-    start_date=pendulum.datetime(2023, 5, 20, tz="UTC"),
+    schedule="0 1 * * *",
+    start_date=pendulum.datetime(2023, 5, 20, tz="Asia/Jakarta"),
     catchup=False,
     dagrun_timeout=datetime.timedelta(minutes=60),
 
